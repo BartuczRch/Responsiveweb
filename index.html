@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="hu">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,43 +8,121 @@
     <link rel="stylesheet" href="Bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="container">
         <header>
-            <h1>Reszponzív weboldalak Bootstrap segítségével</h1>
-            <img src="logo.jpg" alt="Bootstrap-logo" title="Bootstrap-logo" class="img-fluid position-absolute top-0 end-0">
+            
+            <nav id="nav-bar">
+                <div class="nav-elem"><a href="#pgl1">Mi a bootstrap?</a></div>
+                <div class="nav-elem"><a href="#pgl2">Miért érdemes használni?</a></div>
+                <div class="nav-elem"><a href="#pgl3">Rácsrendszer</a></div>
+                <div class="nav-elem"><a href="#pgl4">Nav-bar</a></div>
+                <div class="nav-elem"><a href="#pgl5">Gomb, űrlap</a></div>
+                <div class="nav-elem"><a href="#pgl6">Modális ablakok</a></div>
+                <div class="nav-elem"><a href="#pgl7">Képcsúszka</a></div>
+                <img src="logo.jpg" alt="Bootstrap-logo" title="Bootstrap-logo" class="img-fluid nav-img">
+            </nav>
+            <h1 id="pglb">Reszponzív weboldalak Bootstrap segítségével</h1>
         </header>
         <h2>Hogyan kezdjünk hozzá?</h2>
+        <section>A Bootstrap használatakor először töltsük le a legfrissebb verziót a hivatalos weboldalról. A Bootstrap
+            alapvető CSS és JavaScript fájlokat tartalmaz, amelyeket be kell illeszteni az oldalunkba. A dokumentáció
+            részletes útmutatást nyújt a telepítésről és az osztályok használatáról, így könnyen elkezdhetjük a
+            Bootstrap használatát.</section>
         <div class="row">
-            <div class="col-md-6 col-lg-6 border border-2" id="b-bg">
+            <div class="col-md-6 col-lg-6 border border-2 b-bg" id="pgl1">
                 <h3>Mi a Bootstrap?</h3>
+                <p>A Bootstrap egy nyílt forráskódú front-end keretrendszer, amely segítségével könnyen és hatékonyan
+                    készíthetünk reszponzív, mobilbarát weboldalakat és webalkalmazásokat. Tartalmaz előre definiált CSS
+                    és JavaScript komponenseket, amelyek lehetővé teszik a gyors és egyszerű fejlesztést. A
+                    keretrendszer tartalmaz sablonokat, gombokat, űrlapokat és egyéb interfész elemeket, valamint
+                    reszponzív keretrendszert a könnyű elrendezés és elrendezési módosítások érdekében.</p>
             </div>
-            <div class="col-md-6 col-lg-6 border border-2" id="b-bg">
+            <div class="col-md-6 col-lg-6 border border-2 b-bg" id="pgl2">
                 <h3>Miért érdemes használni?</h3>
+                <p>A Bootstrap használata megkönnyíti a webfejlesztést, könnyen tanulható dokumentációja és előre
+                    definiált stílusosztályai vannak. A keretrendszer reszponzív tervezési lehetőségeket kínál, így a
+                    weboldalak és alkalmazások jól működnek különböző eszközökön. A Bootstrap folyamatosan frissül és a
+                    közösség által fejleszthetik, így naprakész az új trendekkel és technológiákkal. Széles körű
+                    támogatottsága és dokumentációja által könnyen található megoldás bármilyen fejlesztési kérdésre.
+                    Összességében a Bootstrap használata felgyorsítja a fejlesztési folyamatot és biztosítja a modern,
+                    reszponzív felhasználói élményt, ezért érdemes ezt a keretrendszert választani a webfejlesztés
+                    során.</p>
             </div>
         </div>
         <h2>Alapvető Bootstrap komponensek</h2>
         <div class="row">
-            <div class="col-md-4 col-lg-4 border border-2" id="b-bg">
-                <h3>Bootstrap keretrendszer</h3>
+            <div class="col-md-4 col-lg-4 border border-2 b-bg" id="pgl3">
+                <h3>Bootstrap rácsrendszer</h3>
+                <article>
+                    A Bootstrap reszponzív rácsrendszere az egyik fő jellemzője a keretrendszernek. Ez egy rugalmas és
+                    könnyen használható elrendezési rendszer, amely lehetővé teszi a weboldalak és webalkalmazások
+                    reszponzív tervezését. A rácsrendszer alapja a 12 oszlopos elrendezés, amely lehetővé teszi az
+                    oszlopok egymás mellé rendezését különböző eszközökön és kijelzőméreteken.
+                    A rácsrendszer használata során az oszlopokat úgy lehet elrendezni, hogy
+                    azok automatikusan alkalmazkodjanak a különböző képernyőméretekhez, így biztosítva a jobb
+                    felhasználói élményt. Ez a rugalmas elrendezési rendszer teszi lehetővé a weboldalak és alkalmazások
+                    megfelelő megjelenítését asztali számítógépeken, laptopokon, táblagépeken és mobiltelefonokon
+                    egyaránt. A reszponzív rácsrendszer használata segít abban, hogy a tartalom jól látható és könnyen
+                    navigálható legyen minden eszközön.
+                    <img src="grid.png" alt="Rácsrendszer" title="Rácsrendszer" class="img-fluid">
+                </article>
             </div>
-            <div class="col-md-4 col-lg-4 border border-2" id="b-bg">
+            <div class="col-md-4 col-lg-4 border border-2 b-bg" id="pgl4">
                 <h3>Navigációs sáv</h3>
+                <article>
+                    A Bootstrap navigációs sávja egy kulcsfontosságú komponens, amely lehetővé teszi az egyszerű és
+                    hatékony navigációt a weboldalakon. Ez a reszponzív sáv különböző stílusokban és elrendezésekben
+                    használható, beleértve a fix, ádfedő vagy lapozható változatokat is. A Bootstrap navigációs sávja
+                    könnyen testreszabható és bővíthető, például ikonokkal, gombokkal és leugró menükkel, így lehetővé
+                    téve a felhasználóbarát és esztétikus navigációt a weboldalakon.
+                    <img src="navbar.jpg" alt="Navigációs sáv" title="Navigációs sáv" class="img-fluid">
+                </article>
             </div>
-            <div class="col-md-4 col-lg-4 border border-2" id="b-bg">
+            <div class="col-md-4 col-lg-4 border border-2 b-bg" id="pgl5">
                 <h3>Gombok, űrlapok</h3>
+                <article>
+                    A gombok és űrlapok alapvető részei a webfejlesztésnek, amelyek lehetővé teszik az interakciókat a
+                    felhasználókkal. A Bootstrap gombok széles választékát kínálja, beleértve az egyszerű gombokat,
+                    ikonos gombokat és nagyobb méretű gombokat is. Az űrlapok esetében a Bootstrap előre definiált
+                    stílusokat biztosít űrlapmezők, választógombok és választóelemek számára, amelyek könnyen testre
+                    szabhatók és reszponzívak. Ezek a komponensek gyorsan és hatékonyan hozzájárulnak a felhasználói
+                    felületek kialakításához és a felhasználói élmény javításához a Bootstrap keretrendszer
+                    segítségével.
+                    <img src="btn.png" alt="Gombok" title="Gombok" class="img-fluid">
+                </article>
             </div>
         </div>
         <h2>Haladó funkciók és testreszabás</h2>
         <div class="row">
-            <div class="col-md-6 col-lg-6 border border-2" id="b-bg">
-                <h3>Modal ablakok</h3>
+            <div class="col-md-6 col-lg-6 border border-2 b-bg" id="pgl6">
+                <h3>Modális ablakok</h3>
+                <p>
+                    A modális ablakok fontos részei a felhasználói felületeknek, amelyek lehetővé teszik a
+                    felhasználókkal való interakciót különböző tartalmak megjelenítése vagy műveletek végrehajtása
+                    céljából. Ezek az ablakok felugró felületeket hoznak létre, amelyek jól integrálhatók a Bootstrap
+                    keretrendszer más komponenseivel. A Bootstrap modális ablakai könnyen testreszabhatók és
+                    reszponzívak, így kiválóan alkalmasak különböző célú felhasználói interakciók megvalósítására a
+                    weboldalakon és webalkalmazásokban.
+                    <img src="form.jpg" alt="Modális űrlap" title="Modális űrlap" class="img-fluid">
+                </p>
             </div>
-            <div class="col-md-6 col-lg-6 border border-2" id="b-bg">
+            <div class="col-md-6 col-lg-6 border border-2 b-bg" id="pgl7">
                 <h3>Képcsúszka</h3>
+                <p>
+                    A Bootstrap keretrendszer lehetővé teszi a könnyű integrációt és testreszabást a képcsúszka
+                    komponens segítségével. Ez a funkció lehetővé teszi a felhasználóknak, hogy képeket vagy más
+                    multimédiás tartalmakat jelenítsenek meg egy adott területen, amelyeket egyszerűen navigálhatnak
+                    vagy átnézhetnek. A képcsúszka könnyen testreszabható az alkalmazás stílusához és igényeihez, és
+                    lehetővé teszi a reszponzív elrendezését, hogy különböző eszközökön és kijelzőméreteken is
+                    megfelelően működjön.<br>
+                    <img src="slide.jpg" alt="Képcsúszka" title="Képcsúszka" class="img-fluid">
+                </p>
             </div>
         </div>
         <footer class="footer text-center">
+            <div class="nav-elem-footer"><a href="#pglb">Vissza az oldal tetejére</a></div>
             <p>
                 Készült: 2024.03.03 - 2024.03.17 | &copy;Bootstrap
             </p>
